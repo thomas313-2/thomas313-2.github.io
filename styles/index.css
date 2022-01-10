@@ -1,0 +1,40 @@
+body{
+    margin: 0px;
+    font-family: 'Vujahday Script', cursive;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: aliceblue;
+    color: #DBAB6B;
+    border-bottom: 3px solid #8DD3F4;
+    font-size: x-large;
+    flex-wrap: wrap;
+}
+
+#logo img{
+    height: 4rem;
+    margin: 0.7rem 0px;
+}
+
+#enlaces a{
+    text-decoration: none;
+    color: #DBAB6B ;
+    font-weight: bold;
+    margin: 0px 1rem;
+}
+
+#enlaces{
+    display: flex;
+    justify-content: space-around;
+}
+
+#logo{
+    display: flex;
+    align-items: center;
+}
+
+#formulario{
+    display: flex;
+}
