@@ -1,8 +1,9 @@
 body{
     margin: 0px;
-    font-family: 'Vujahday Script', cursive;
+    font-family: 'Yellowtail', cursive;
+    background-color: #BDFCC9;
 }
-nav{
+header{
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -19,7 +20,7 @@ nav{
     margin: 0.7rem 0px;
 }
 
-#enlaces a{
+nav a{
     text-decoration: none;
     color: #DBAB6B ;
     font-size: xx-large;
@@ -27,7 +28,7 @@ nav{
     margin: 0px 1rem;
 }
 
-#enlaces{
+nav{
     display: flex;
     justify-content: space-around;
 }
@@ -59,4 +60,105 @@ button{
 
 input{
     margin-left: 1rem;
+}
+
+#Fotos{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#Fotos div{
+    width: 25%;
+    min-width: 300px;
+    margin-bottom:0.5rem;
+}
+
+main{
+    max-width: 1200px;
+    margin: 3rem auto;
+}
+
+#Fotos img{
+    max-width: 100%;
+    min-height: 90%;
+}
+
+#Fotos h2{
+    display: flex;
+    justify-content: center;
+}
+
+th{
+    border: 2px solid #9B59B6;
+}
+
+td{
+    width: 16.6%;
+    border: 2px solid #9B59B6;
+    font-size: x-large;
+    text-align: center;
+    min-width: 200PX;
+}
+
+td img{
+    max-width: 100%;
+}
+
+table{
+    border: 3px solid #D7BDE2 ;
+    margin-top: 4rem;
+    border-collapse: collapse;
+}
+
+thead{
+    font-weight: bold;
+    background-color: black;
+    color: white;
+    height: 3rem;
+    font-size: x-large;
+}
+
+tbody tr:nth-child(2n+1){
+    background-color: #EBDEF0;
+}
+ 
+tbody tr:nth-child(2n){
+    background-color: #D6EAF8;
+}
+
+#tabla{
+    overflow: auto;
+}
+
+tbody tr>td:nth-child(1){
+    font-weight: bold;
+}
+
+#info{
+    margin-top: 3rem;
+    font-size: x-large;
+}
+
+figure{
+    float: right;
+    border: 1px solid black;
+    width: 300px;
+}
+
+figure img{
+    border-bottom: 1px solid black;
+    width: 300px;
+}
+
+figcaption{
+    text-align: center;
+}
+
+summary{
+    cursor:pointer;
+}
+
+figcaption a{
+    text-decoration: none;
+    color: black;
 }
