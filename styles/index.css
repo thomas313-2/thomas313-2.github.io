@@ -65,12 +65,13 @@ input{
 #Fotos{
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 #Fotos div{
     width: 25%;
     min-width: 300px;
-    margin-bottom:0.5rem;
+    margin-bottom: 2.5rem;
 }
 
 main{
