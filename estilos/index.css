@@ -1,0 +1,55 @@
+body{
+    background-color: lightslategray;
+    color: burlywood;
+    margin: 0px;
+    font-size: large;
+}
+
+nav{
+    height: 4rem;
+    background-color: gray;
+    color: aquamarine;
+    border-bottom: 3px solid sandybrown;
+}
+
+nav p{
+    margin-top: 0px;
+}
+
+main{
+    max-width: 1500px;
+    margin: auto;
+}
+
+#dibujitos{
+    font-size: larger;
+    width: 100%;
+}
+
+.cala{
+    max-height: 400px;
+    float: right;
+}
+
+#lobodiv{
+    margin-top: 30rem;
+    max-width: 1300px;
+}
+
+#imageneslobo{
+    max-width: 400px;
+    float: right;
+}
+
+#imageneslobo img{
+    max-width: 550px;
+}
+
+.naru{
+    max-width: 400px;
+    float: right;
+}
+
+#naruto{
+    margin-top: 40rem;
+}
