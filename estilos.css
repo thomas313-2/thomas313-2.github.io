@@ -1,0 +1,51 @@
+body{
+    background-image: url("img/fondo.jpg");
+    background-repeat: repeat;
+    margin: 0px;
+    max-width: 1200px;
+    margin: auto;
+    font-family: 'Palette Mosaic', cursive;
+}
+
+th{
+    width: 12.5%;
+    padding: 0px;
+    text-align: center;
+    height: 2rem;
+    color: white;
+    background-color: black;
+}
+
+td{
+    width: 12.5%;
+    padding: 0px;
+    border: 1px solid black;
+    text-align: center;
+}
+
+table tr:nth-child(2n){
+	background-color: lightblue;
+    color: black;
+}
+
+table tr:nth-child(2n+1){
+	background-color: lightgoldenrodyellow;
+    color: black;
+}
+
+table{
+    border-collapse: collapse;
+    max-width: 1200px;
+    border: 1px solid black;
+    margin: 0px;
+}
+
+img{
+    display: block;
+    width: 100%;
+    object-fit: contain;
+}
+
+h2,h1{
+    color: whitesmoke;
+}
