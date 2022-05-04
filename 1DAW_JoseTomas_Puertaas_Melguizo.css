@@ -46,7 +46,7 @@ h3{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background-image: url('assets/img/pepe.png');
+    background-image: url('assets/img/paper.png');
     background-size: cover;
 }
 
@@ -78,23 +78,35 @@ table{
     display: table;
     border-collapse: collapse;
     margin: auto;
-    background-image: url('assets/img/pepe.png');
+    background-image: url('assets/img/velvet.jpg');
     background-size: cover;
     font-weight: bolder;
 }
 
 th{
     font-size: xx-large;
-    color: #420F05;
+    color: #FF6262;
 }
 
 td{
-    color: #F54B27 ;
+    color: #FF9262 ;
+    padding: 0px;
+}
+
+td:last-child{
+    padding: 0px;
 }
 
 td,th{
+    border: 1px solid white;
+    width: 16%;
     text-align: center;
     padding: 1rem;
+}
+
+td img{
+    width: 100%;
+    display: block;
 }
 
 @media (max-width: 576px) {
