@@ -64,6 +64,7 @@ button{
     font-size: larger;
     font-style: italic;
     font-weight: bolder;
+    border-radius: 1rem;
     color: darkred;
     text-shadow: 10px 7px #CACACA;
     width: 100%;
@@ -71,6 +72,29 @@ button{
     margin-bottom: 0px;
     -webkit-box-shadow: #FFF 0 -1px 4px, #ff0 0 -2px 10px, #ff8000 0 -10px 20px, red 0 -18px 40px, 5px 5px 15px 5px rgba(0,0,0,0); 
     box-shadow: #FFF 0 -1px 4px, #ff0 0 -2px 10px, #ff8000 0 -10px 20px, red 0 -18px 40px, 5px 5px 15px 5px rgba(0,0,0,0);
+}
+
+table{
+    display: table;
+    border-collapse: collapse;
+    margin: auto;
+    background-image: url('assets/img/pepe.png');
+    background-size: cover;
+    font-weight: bolder;
+}
+
+th{
+    font-size: xx-large;
+    color: #420F05;
+}
+
+td{
+    color: #F54B27 ;
+}
+
+td,th{
+    text-align: center;
+    padding: 1rem;
 }
 
 @media (max-width: 576px) {
