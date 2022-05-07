@@ -4,6 +4,7 @@ body{
     color: #641E16;
     font-family: 'Caveat', cursive;
     font-size: x-large;
+    box-sizing: border-box;
     background-image: url('assets/img/fondo.png');
     background-size: cover;
 }
@@ -74,37 +75,45 @@ button{
     box-shadow: #FFF 0 -1px 4px, #ff0 0 -2px 10px, #ff8000 0 -10px 20px, red 0 -18px 40px, 5px 5px 15px 5px rgba(0,0,0,0);
 }
 
-table{
+#pc{
     display: table;
-    border-collapse: collapse;
     margin: auto;
-    background-image: url('assets/img/velvet.jpg');
-    background-size: cover;
+}
+
+#movil{
+    display: none;
+}
+
+table{
+    border-collapse: collapse;
+    background-color: #63636357;
     font-weight: bolder;
 }
 
 th{
+    background-color: #00000057;
     font-size: xx-large;
     color: #FF6262;
 }
 
 td{
     color: #FF9262 ;
+}
+
+#pc td:last-child{
     padding: 0px;
 }
 
-td:last-child{
-    padding: 0px;
+#pc td,th{
+    width: 16%;
 }
 
 td,th{
     border: 1px solid white;
-    width: 16%;
     text-align: center;
-    padding: 1rem;
 }
 
-td img{
+#pc img{
     width: 100%;
     display: block;
 }
@@ -113,9 +122,32 @@ td img{
     .infopersonaje img{
         width: 50%;
     }
+
+    .separador {
+        height: 1rem;
+    }
+    
+    #pc{
+        display: none;
+    }
+
+    #movil{
+        display: table;
+        width: 100%;
+    }
+
+    td,th{
+        padding: 1rem;
+    }
+
+    #movil img{
+        width: 80%;
+    }
+
     .grupersonaje{
         flex-wrap: wrap;
     }
+
     .personaje{
         width: 90%;
     }
