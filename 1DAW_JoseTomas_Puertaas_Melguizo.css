@@ -23,13 +23,13 @@ h2,h1,h3{
     display: block;
     width: 100%;
     font-family: 'Lemonada', cursive;
-    background: linear-gradient(black,red);
+    background: linear-gradient(rgb(238, 131, 8),red);
     -webkit-background-clip: text;
     color: transparent;
 }
 
 h3{
-    background: linear-gradient(red,black);
+    background: linear-gradient(red,rgb(0, 0, 0));
     -webkit-background-clip: text;
     color: transparent;
 }
@@ -119,6 +119,7 @@ td,th{
 }
 
 #contactos{
+    color: #FF9262;
     display: flex;
     flex-wrap: nowrap;
     width: 80%;
