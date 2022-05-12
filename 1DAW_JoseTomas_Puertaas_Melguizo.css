@@ -118,6 +118,10 @@ td,th{
     display: block;
 }
 
+span label{
+    margin-right: 5px;
+}
+
 #contactos{
     color: #FF9262;
     display: flex;
@@ -142,13 +146,14 @@ form div{
 
 
 form span{
+    width: 50%;
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     align-items: center;
 }
 
 span input{
-    width: 60%;
+    max-width: 60%;
 }
 
 div{
@@ -186,6 +191,10 @@ iframe{
         flex-direction: column-reverse;
         margin: 0px;
         width: 100%;
+    }
+
+    form span{
+        flex-wrap: nowrap;
     }
 
     #contactos article{
