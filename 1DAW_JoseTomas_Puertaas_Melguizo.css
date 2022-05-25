@@ -156,7 +156,7 @@ span input{
     max-width: 60%;
 }
 
-div{
+form div{
     display: flex;
     justify-content: space-between;
     flex-wrap: nowrap;
@@ -179,6 +179,82 @@ iframe{
 #contactos article{
     width: 46%;
     margin: 1rem;
+}
+
+#bosses{
+    margin: 0px;
+    max-width: 100%;
+}
+#padre{
+    display: grid;
+    height: 100vh;
+    grid-template-rows: repeat(12,7.5vh);
+    grid-template-columns:  repeat(12,1fr);
+}
+
+#padre img{
+    width: 100%;
+    object-fit: cover;
+}
+
+#padre div{
+    display: flex;
+}
+
+#bestia{
+    grid-row: 1/10;
+    grid-column: 1/6;
+}
+
+#mascara{
+    grid-row: 1/5;
+    grid-column: 6/13;
+}
+
+#satan{
+    grid-row: 10/13;
+    grid-column: 1/6;
+}
+
+#greed{
+    grid-row: 5/11;
+    grid-column: 6/13;
+}
+
+#momia{
+    grid-row: 11/13;
+    grid-column: 6/10;
+}
+
+#pin{
+    grid-row: 11/13;
+    grid-column: 10/13;
+}
+
+#tablero{
+    width: 512px;
+    margin: auto;
+    display: grid;
+    grid-template-rows: repeat(8,64px);
+    grid-template-columns: repeat(8,64px);
+    background-image: url('assets/piezas/tablero.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+#nada{
+    grid-row: 3/7;
+    grid-column: 1/-1;
+}
+
+#tablero img{
+    width: 90%;
+}
+
+#tablero div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 @media (max-width: 576px) {
