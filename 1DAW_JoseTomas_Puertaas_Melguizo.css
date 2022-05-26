@@ -4,9 +4,13 @@ body{
     color: #641E16;
     font-family: 'Caveat', cursive;
     font-size: x-large;
-    box-sizing: border-box;
     background-image: url('assets/img/fondo.png');
     background-size: cover;
+}
+
+h1{
+padding-top: 15rem;
+margin-top: 0px;
 }
 
 section{
@@ -118,73 +122,55 @@ td,th{
     display: block;
 }
 
-span label{
-    margin-right: 5px;
-}
-
-#contactos{
-    color: #FF9262;
+#contactopadre{
     display: flex;
-    flex-wrap: nowrap;
-    width: 80%;
-    margin: auto;
+    flex-direction: row;
     justify-content: space-around;
+    max-width: 1500px;
 }
 
-#contactos p{
-    margin: 0px;
+#ubicacion{
+    width: 45%;
 }
 
-textarea{
-    width: 100%;
+#formularioabajo{
+    width: 45%;
 }
 
-form div{
-    margin: 1rem;
-    margin-bottom: 2rem;
-}
-
-
-form span{
-    width: 50%;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-}
-
-span input{
-    max-width: 60%;
-}
-
-form div{
+#nombreycorreo{
     display: flex;
     justify-content: space-between;
     flex-wrap: nowrap;
-    align-items: center;
 }
 
-form div:nth-child(2){
-    flex-direction: column;
-    align-items: flex-start;
+#correoformulario{
+    width: 50%;
 }
 
-form div:nth-child(3){
-    justify-content: flex-start;
+#nombreformulario{
+    width: 50%;
 }
 
-iframe{
+#textareaabajo p{
+    margin-left: 0px;
+    margin-bottom: 0px;
+}
+
+#textareaabajo textarea{
     width: 100%;
+    box-sizing: border-box;
 }
 
-#contactos article{
-    width: 46%;
-    margin: 1rem;
+#aceptar{
+    margin-bottom: 3rem;
+    margin-top: 2rem;
 }
 
 #bosses{
     margin: 0px;
     max-width: 100%;
 }
+
 #padre{
     display: grid;
     height: 100vh;
@@ -257,29 +243,200 @@ iframe{
     align-items: center;
 }
 
+nav{
+    background-color: #000000F0;
+    display: flex;
+    position: fixed;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-around;
+    z-index: 1;
+}
+
+
+#listaenlaces{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+#primerhijolista{
+    margin-left: 3rem;
+}
+
+a{
+    font-size: xx-large;
+    font-weight: bolder;
+    color: inherit;
+    margin-right: 3rem;
+    text-decoration: none;
+}
+
+#logo{
+    width: 60%;
+    display: flex;
+    align-items: center;
+}
+
+iframe{
+    width: 100%;
+}
+
+#logo img{
+    width: 20%;
+}
+
+#redessociales{
+    width: 10%;
+    display: flex;
+    align-items: center;
+}
+
+#redessociales a{
+    color: rgba(55, 56, 58, 0.993);
+    font-size: larger;
+}
+
+#botonacceso{
+    margin-top: 1rem;
+    font-size: medium;
+}
+
+#acceso{
+    display: flex;
+    width: 15%;
+    align-items: center;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+.inputarriba{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.inputarriba input{
+    width: 40%;
+}
+
+#acceso form{
+    width: 100%;
+}
+
+@media(max-width: 1275px){
+    nav{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    h1{
+        padding-top: 25rem;
+    }
+
+    #acceso{
+        width: 40%;
+        margin-bottom: 2rem;
+    }
+
+    #logo{
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+@media(max-width: 910px){
+    #logo{
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    h1{
+        padding-top: 30rem;
+    }
+
+    #logo img{
+        width: 30%;
+    }
+
+    #listaenlaces{
+        width: 100%;
+        margin: 2rem;
+        justify-content: space-around;
+    }
+
+    #acceso{
+        width: 70%;
+    }
+
+    #listaenlaces a{
+        margin: 0px;
+    }
+}
+
+@media(max-width: 765px){
+    .fallo{
+        width: 80%;
+    }
+}
+
 @media (max-width: 576px) {
     .infopersonaje img{
         width: 50%;
     }
 
-    #contactos{
-        justify-content: center;
+    #logo img{
+        width: 30%;
+    }
+
+    h1{
+        padding-top: 20rem;
+    }
+
+    a{
+        font-size: larger;
+    }
+
+    #listaenlaces{
+        margin:1.5rem;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    #acceso{
+        margin: 0px;
+        margin-bottom: 1rem;
+    }
+
+    #nombreycorreo{
+        flex-direction: column;
+    }
+
+    .fallo{
+        width: 100%;
+    }
+
+    #contactopadre{
         flex-direction: column-reverse;
-        margin: 0px;
+    }
+
+    #nombreformulario{
         width: 100%;
     }
 
-    form span{
-        flex-wrap: nowrap;
+    #correoformulario{
+        width: 100%;
     }
 
-    #contactos article{
+    #ubicacion{
+        margin-top: 3rem;
         width: 100%;
-        margin: 0px;
     }
-
-    #mapa{
-        width: 100%;
+    
+    #formularioabajo{
+        width: 90%;
+        margin: auto;
     }
 
     .separador {
@@ -311,5 +468,11 @@ iframe{
 
     .personaje{
         width: 90%;
+    }
+
+    #tablero{
+        width: 360px;
+        grid-template-rows: repeat(8,45px);
+        grid-template-columns: repeat(8,45px);
     }
 }
