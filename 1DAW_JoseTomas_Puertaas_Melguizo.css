@@ -264,7 +264,7 @@ nav{
     margin-left: 3rem;
 }
 
-a{
+#logo a{
     font-size: xx-large;
     font-weight: bolder;
     color: inherit;
@@ -287,14 +287,15 @@ iframe{
 }
 
 #redessociales{
-    width: 10%;
+    width: 8%;
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 
 #redessociales a{
-    color: rgba(55, 56, 58, 0.993);
     font-size: larger;
+    color: rgb(187, 14, 14);
 }
 
 #botonacceso{
@@ -330,6 +331,10 @@ iframe{
         align-items: center;
     }
 
+    #redessociales{
+        width: 20%;
+    }
+
     h1{
         padding-top: 25rem;
     }
@@ -358,6 +363,10 @@ iframe{
 
     #logo img{
         width: 30%;
+    }
+
+    #redessociales{
+        width: 40%;
     }
 
     #listaenlaces{
@@ -394,7 +403,7 @@ iframe{
         padding-top: 20rem;
     }
 
-    a{
+    #logo a{
         font-size: larger;
     }
 
