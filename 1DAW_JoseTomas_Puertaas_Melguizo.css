@@ -134,6 +134,7 @@ td,th{
 }
 
 #formularioabajo{
+    color: #FF9262;
     width: 45%;
 }
 
@@ -173,7 +174,7 @@ td,th{
 
 #padre{
     display: grid;
-    height: 100vh;
+    height: 90vh;
     grid-template-rows: repeat(12,7.5vh);
     grid-template-columns:  repeat(12,1fr);
 }
@@ -245,6 +246,7 @@ td,th{
 
 nav{
     background-color: #000000F0;
+    color: #FF9262;
     display: flex;
     position: fixed;
     flex-wrap: wrap;
