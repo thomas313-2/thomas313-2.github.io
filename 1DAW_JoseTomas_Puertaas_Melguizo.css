@@ -248,6 +248,7 @@ nav{
     background-color: #000000F0;
     color: #FF9262;
     display: flex;
+    top: 0px;
     position: fixed;
     flex-wrap: wrap;
     width: 100%;
