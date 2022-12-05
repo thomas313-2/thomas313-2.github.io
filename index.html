@@ -1,506 +1,134 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="1DAW_JoseTomas_Puertaas_Melguizo.css">
-    <title>PracticaAcabada_JoseTomas_Puertas_Melguizo</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lemonada:wght@300&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-     integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
-<body>
-    <nav>
-        <div id="logo">
-            <img src="assets/img/logo.png" alt="Logo del juego">
-                <div id="listaenlaces">
-                    <a href="#cuatroelementos" id="primerhijolista">Personajes</a>
-                    <a href="#bosses">Jefes</a>
-                    <a href="#ajedrez">Ajedrez</a>
-                    <a href="#tabla">Objetos</a>
-                    <a href="#contacto">Contacto</a>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Practica Formulario</title>
+        <meta name="author" content="Jose Tomas Puertas Melguizo">
+        <meta name="description" content="Está página es una práctica de creación de formularios en HTML">
+        <link rel="stylesheet" href="formulario.css">
+        <link rel="stylesheet" href="logica.js">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+    <body>
+        <header id="menu">
+            <i class="fa-solid fa-face-dizzy"></i>
+            <h1>Eventos para <em>cosplayers</em></h1>
+            <i class="fa-solid fa-bars"></i>
+        </header>
+        <main>
+            <h2>¡Preparate para tu evento!</h2>
+            <div>
+                <div class="contenedor">
+                    <h2>Salón Barcelona 8-11 Diciembre</h2>
+                    <i class="fa-solid fa-angle-down enlace" id="enlace_1"></i>
+                    <i class="fa-solid fa-angle-up enlace" id="enlace_1.1" style="display: none;"></i>
                 </div>
-        </div>
-        <div id="redessociales">
-            <a href="https://twitter.com/Tomas3134" target="_blank"><i class="fa-brands fa-twitter"></i></a>
-            <a href="https://www.instagram.com/jthomas_313/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-            <a href="https://www.youtube.com/watch?v=FKJvVd3Uyz4&ab_channel=Cari%C3%B1o" target="_blank"><i class="fa-brands fa-youtube"></i></a>
-        </div>
-        <div id="acceso">
-            <form action="">
-                <div id="correoacceso" class="inputarriba">
-                    <label for="correoformularioarriba">Correo: </label>
-                    <input type="email" id="correoformularioarriba" name="correoformularioarriba">
-                </div>
-                <div id="contraseñaacceso" class="inputarriba">
-                    <label for="contraseñaformularioarriba">Contraseña: </label>
-                    <input type="password" id="contraseñaformularioarriba" name="contraseñaformularioarriba">
-                </div>
-                <button type="submit" id="botonacceso">Acceso</button>
-            </form>
-        </div>
-    </nav>
-    <main>
-        <h1 id="titulo">Blog super serio del TBOIA+</h1>
-        <section id="cuatroelementos">
-            <div id="father">
-                <h2>Personajes TBOIA+</h2>
-                <div class="grupersonaje">
-                    <article id="Isaac" class="personaje">
-                        <h3>Isaac</h3>
-                        <div class="infopersonaje">
-                            <p>
-                                <img src="assets/img/isaac.png" alt="Personaje de Isaac">
-                                Isaac es un niño de 5 años, su nombre completo es Isaac Moriah, su padre es un reparador y
-                                 su madre una cristiana practicante, es el personaje base del videojuego. Su historia en la cual
-                                  su madre le quiere matar es  una clara referencia a la historia bíblica de la atadura de Isaac,
-                                   donde Abraham es ordenado por Dios a sacrificar a su único hijo.
-                                El personaje es calvo porque su madre le afeitó su cabeza.
-                            </p>
-                        </div>
-                        <button type="submit">Tomo bíblico</button>
-                    </article>
-                    <article id="Azazel" class="personaje">
-                        <h3>Azazel</h3>
-                        <div class="infopersonaje">
-                            <p>
-                            <img src="assets/img/azazel.png" alt="Personaje de Azazel">
-                            Azazel es un angel caido, en rabínico su nombre significa literalmente "para la total eliminación".
-                             Está asociado al rito del Día de la Expiación, cuando se echaban a suertes sobre dos cabríos, uno para
-                              Yahvé y otro para Azazel. Este personaje es el único que puede tener vida roja aunque en sus caractiresticas
-                               pone -1 en está y es el único que puede volar sin necesidad de ningun item.
-                            </p>
-                        </div>
-                        <button type="submit">Tomo bíblico</button>
-                    </article>
-                </div>
-                <div class="grupersonaje">
-                    <article id="Lazarus" class="personaje">
-                        <h3>Lazarus</h3>
-                        <div class="infopersonaje">
-                            <p>
-                            <img src="assets/img/lazarus.png" alt="Personaje de Lazarus">
-                            Es un personaje que referencía al personaje biblico de Lázaro de Betania, este último vivió en Betania,
-                             un pueblo a las afueras de Jerusalén. En su casa se alojó Jesús en tres ocasiones (confirmadas),
-                              como pago por esto fue revivido, cosa que tambien hace en el juego. Por este acontecimiento su
-                               nombre es utilizado frecuentemente como sinónimo de resurrección. El el juego cuando pasa esto
-                                nuestro personaje consigue un corazon rojo de vida, más daño, velocidad y rango, pero su suerte baja un punto.
-                            </p>
-                        </div>
-                        <button type="submit">Tomo bíblico</button>
-                    </article>
-                    <article id="Cain" class="personaje">
-                        <h3>Cain</h3>
-                        <div class="infopersonaje">
-                            <p>
-                            <img src="assets/img/cain.png" alt="Personaje de Cain">
-                            Cain es el primogénito de Adán y Eva, era un labrador de la tierra al igual que su padre Adán.
-                             Según la Bíblia, cain y us hermano Abel presentaron sus sacrificios a Dios, al verlos Dios prefirío
-                              la ofrenda de Abel (primicias y grasa de sus ovejas) a la de Cain (frutos del campo), a Cain se le
-                               fue y revento con una azada a Abel, Despues de eso volvio a su campo y al ser preguntado por
-                                Morgan Freeman sobre el paradero de su hermano dijo:"Illo mi alma yo no soy la niñera de nadie".
-                            </p>
-                        </div>
-                        <button type="submit">Tomo bíblico</button>
-                    </article>
+                <div id="info_1" class="info" style="display: none;">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1780.816419435177!2d2.1342869936073137!3d41.353129973151475!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a498bae8d36311%3A0x4fb2276a5e89aeda!2sFira%20Gran%20Via%20-%20Gate%204%20%2F%20Puerta%204!5e0!3m2!1ses!2ses!4v1670274905804!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    
+                    <h3><a href="https://www.manga-barcelona.com/es/inicio.cfm">Enlace</a></h3>
                 </div>
             </div>
-        </section>
-        <section id="bosses">
-            <h2>Mis jefes/bosses favoritos</h2>
-            <article id="padre">
-                <div id="bestia">
-                    <img src="assets/bosses/beestia.jpg" alt="The Beast, boss final después de matar a Dogma">
+            <div>
+                <div class="contenedor">
+                    <h2>Hobbycon Coruña Febrero</h2>
+                    <i class="fa-solid fa-angle-down enlace" id="enlace_2"></i>
+                    <i class="fa-solid fa-angle-up enlace" id="enlace_2.1" style="display: none;"></i>
                 </div>
-                <div id="mascara">
-                    <img src="assets/bosses/mascara.webp" alt="Mask of Infami, el peor boss">
-                </div>
-                <div id="satan">
-                    <img src="assets/bosses/megasatan.jpg" alt="Mega Satan, boss final después de conseguir la llave">
-                </div>
-                <div id="greed">
-                    <img src="assets/bosses/ultragreed.jpg" alt="Ultra Greed, boss final del modo greed">
-                </div>
-                <div id="momia">
-                    <img src="assets/bosses/mega.webp" alt="Mega RagMan, el peor boss de los primeros pisos">
-                </div>
-                <div id="pin">
-                    <img src="assets/bosses/pin.webp" alt="Pin, parece un pene">
-                </div>
-            </article>
-        </section>
-        <section id="ajedrez">
-            <h2>Tablero de ajedrez, tiene mucho que ver con la temática de la web</h2>
-            <article id="tablero">
-                <div> <img src="assets/piezas/nuevas/torre1.png" alt="torre negra"> </div>
-                <div> <img src="assets/piezas/nuevas/caballo1.png "alt="caballo negro"> </div>
-                <div> <img src="assets/piezas/nuevas/alfil1.png" alt="alfil negor"> </div>
-                <div> <img src="assets/piezas/nuevas/rey1.png" alt="rey negro"> </div>
-                <div> <img src="assets/piezas/nuevas/reina1.webp" alt="reina negra"> </div>
-                <div> <img src="assets/piezas/nuevas/alfil1.png" alt="alfil negro"> </div>
-                <div> <img src="assets/piezas/nuevas/caballo1.png" alt="caballo negro"> </div>
-                <div> <img src="assets/piezas/nuevas/torre1.png" alt="torre negra"> </div>
-                <div> <img src="assets/piezas/nuevas/peon1.png" alt="peon negro"> </div>
-                <div> <img src="assets/piezas/nuevas/peon1.png" alt="peon negro"> </div>
-                <div> <img src="assets/piezas/nuevas/peon1.png" alt="peon negro"> </div>
-                <div> <img src="assets/piezas/nuevas/peon1.png" alt="peon negro"> </div>
-                <div> <img src="assets/piezas/nuevas/peon1.png" alt="peon negro"> </div>
-                <div> <img src="assets/piezas/nuevas/peon1.png" alt="peon negro"> </div>
-                <div> <img src="assets/piezas/nuevas/peon1.png" alt="peon negro"> </div>
-                <div> <img src="assets/piezas/nuevas/peon1.png" alt="peon negro"> </div>
-                <div id="nada"></div>
-                <div> <img src="assets/piezas/nuevas/peon.png" alt="peon blanco"> </div>
-                <div> <img src="assets/piezas/nuevas/peon.png" alt="peon blanco"> </div>
-                <div> <img src="assets/piezas/nuevas/peon.png" alt="peon blanco"> </div>
-                <div> <img src="assets/piezas/nuevas/peon.png" alt="peon blanco"> </div>
-                <div> <img src="assets/piezas/nuevas/peon.png" alt="peon blanco"> </div>
-                <div> <img src="assets/piezas/nuevas/peon.png" alt="peon blanco"> </div>
-                <div> <img src="assets/piezas/nuevas/peon.png" alt="peon blanco"> </div>
-                <div> <img src="assets/piezas/nuevas/peon.png" alt="peon blanco"> </div>
-                <div> <img src="assets/piezas/nuevas/torre.png" alt="torre blanca"> </div>
-                <div> <img src="assets/piezas/nuevas/caballo.png "alt="caballo blanco"> </div>
-                <div> <img src="assets/piezas/nuevas/alfil.png" alt="alfil blanco"> </div>
-                <div> <img src="assets/piezas/nuevas/reina.webp" alt="reian blanca"> </div>
-                <div> <img src="assets/piezas/nuevas/rey.png" alt="rey Juan Carlos 1"> </div>
-                <div> <img src="assets/piezas/nuevas/alfil.png" alt="alfil blanco"> </div>
-                <div> <img src="assets/piezas/nuevas/caballo.png" alt="caballo blanco"> </div>
-                <div> <img src="assets/piezas/nuevas/torre.png" alt="torre blanca"> </div>
-            </article>
-        </section>
-        <section id="tabla">
-            <h2>Mejores objetos TBOIA+ verdad absoluta</h2>
-            <table id="pc">
-                <thead>
-                    <tr>
-                        <th>Nombre</th>
-                        <th>Conjunto</th>
-                        <th>Descripción</th>
-                        <th>Tipo</th>
-                        <th>Coste</th>
-                        <th>Foto</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td lang="en">Crystal Ball</td>
-                        <td>Todas las salas</td>
-                        <td>Revela el mapa y da un corazon azul o carta</td>
-                        <td>Activo</td>
-                        <td>Monedas hasta explotar la máquina</td>
-                        <td><img src="assets/img/objects/ball.png" alt="Crystal ball fanart"></td>
-                    </tr>
-                    <tr>
-                        <td lang="en">Mega Blast</td>
-                        <td>Pactos con el demonio</td>
-                        <td>Dispara una brimstone gigante durante 15 segundos</td>
-                        <td>Activo</td>
-                        <td>2 contenedores de corazón</td>
-                        <td><img src="assets/img/objects/megablast.png" alt="Mega Satan Boss"></td>
-                    </tr>
-                    <tr>
-                        <td lang="en">Mama Mega!</td>
-                        <td>Tiendas y habitaciones doradas</td>
-                        <td>Daña a todos los enemigos y destruye todos los obstáculos, de un piso entero</td>
-                        <td>Activo</td>
-                        <td>15 monedas</td>
-                        <td><img src="assets/img/objects/mamamega.png" alt="Mama Mega! Pedestal"></td>
-                    </tr>
-                    <tr>
-                        <td lang="en">Brimstone</td>
-                        <td>Pactos con el demonio</td>
-                        <td>Las lágrimas son reemplazadas por un rayo láser</td>
-                        <td>Pasivo</td>
-                        <td>2 contenedores de corazón</td>
-                        <td><img src="assets/img/objects/azufre.png" alt="Brimstone fanart"></td>
-                    </tr>
-                    <tr>
-                        <td lang="en">Magic Mushroom</td>
-                        <td>Todas las salas</td>
-                        <td>Mejora varias pasivas</td>
-                        <td>Pasivo</td>
-                        <td>Ninguno/bomba para romper setas</td>
-                        <td><img src="assets/img/objects/mushroom.png" alt="Magic Mushroom pedestal"></td>
-                    </tr>
-                    <tr>
-                        <td lang="en">Epic Fetus</td>
-                        <td>Habitaciones doradas</td>
-                        <td>Las lágrimasson reemplazadas por misiles guiados</td>
-                        <td>Pasivo</td>
-                        <td>Ninguno</td>
-                        <td><img src="assets/img/objects/Dr_Fetus.webp" alt="Epic fetus PNJ"></td>
-                    </tr>
-                </tbody>
-            </table>
-            <table class="movil">
-                <tr>
-                    <th>Nombre</th>
-                </tr>
-                <tr>
-                    <td lang="en">Crystal Ball</td>
-                </tr>
-                <tr>
-                    <th>Conjunto</th>
-                </tr>
-                <tr>
-                    <td>Todas las salas</td>
-                </tr>
-                <tr>
-                    <th>Descripción</th>
-                </tr>
-                <tr>
-                    <td>Revela el mapa y da un corazon azul o carta</td>
-                </tr>
-                <tr>
-                    <th>Tipo</th>
-                </tr>
-                <tr>
-                    <td>Activo</td>
-                </tr>
-                <tr>
-                    <th>Coste</th>
-                </tr>
-                <tr>
-                    <td>Monedas hasta explotar la máquina</td>
-                </tr>
-                <tr>
-                    <th>Foto</th>
-                </tr>
-                <tr>
-                    <td><img src="assets/img/objects/ball.png" alt="Crystal ball fanart"></td>
-                </tr>
-            </table>
-            <table class="movil">
-                <tr>
-                    <th>Nombre</th>
-                </tr>
-                <tr>
-                    <td lang="en">Mega Blast</td>
-                </tr>
-                <tr>
-                    <th>Conjunto</th>
-                </tr>
-                <tr>
-                    <td>Pactos con el demonio</td>
-                </tr>
-                <tr>
-                    <th>Descripción</th>
-                </tr>
-                <tr>
-                    <td>Dispara una brimstone gigante durante 15 segundos</td>
-                </tr>
-                <tr>
-                    <th>Tipo</th>
-                </tr>
-                <tr>
-                    <td>Activo</td>
-                </tr>
-                <tr>
-                    <th>Coste</th>
-                </tr>
-                <tr>
-                    <td>2 contenedores de corazón</td>
-                </tr>
-                <tr>
-                    <th>Foto</th>
-                </tr>
-                <tr>
-                    <td><img src="assets/img/objects/megablast.png" alt="Mega Satan Boss"></td>
-                </tr>
-            </table>
-            <table class="movil">
-                <tr>
-                    <th>Nombre</th>
-                </tr>
-                <tr>
-                    <td lang="en">Mama Mega!</td>
-                </tr>
-                <tr>
-                    <th>Conjunto</th>
-                </tr>
-                <tr>
-                    <td>Tiendas y habitaciones doradas</td>
-                </tr>
-                <tr>
-                    <th>Descripción</th>
-                </tr>
-                <tr>
-                    <td>Daña a todos los enemigos y destruye todos los obstáculos, de un piso entero</td>
-                </tr>
-                <tr>
-                    <th>Tipo</th>
-                </tr>
-                <tr>
-                    <td>Activo</td>
-                </tr>
-                <tr>
-                    <th>Coste</th>
-                </tr>
-                <tr>
-                    <td>15 monedas</td>
-                </tr>
-                <tr>
-                    <th>Foto</th>
-                </tr>
-                <tr>
-                    <td><img src="assets/img/objects/mamamega.png" alt="Mama Mega! Pedestal"></td>
-                </tr>
-            </table>
-            <table class="movil">
-                <tr>
-                    <th>Nombre</th>
-                </tr>
-                <tr>
-                    <td lang="en">Brimstone</td>
-                </tr>
-                <tr>
-                    <th>Conjunto</th>
-                </tr>
-                <tr>
-                    <td>Pactos con el demonio</td>
-                </tr>
-                <tr>
-                    <th>Descripción</th>
-                </tr>
-                <tr>
-                    <td>Las lágrimas son reemplazadas por un rayo láser</td>
-                </tr>
-                <tr>
-                    <th>Tipo</th>
-                </tr>
-                <tr>
-                    <td>Pasivo</td>
-                </tr>
-                <tr>
-                    <th>Coste</th>
-                </tr>
-                <tr>
-                    <td>2 contenedores de corazón</td>
-                </tr>
-                <tr>
-                    <th>Foto</th>
-                </tr>
-                <tr>
-                    <td><img src="assets/img/objects/azufre.png" alt="Brimstone fanart"></td>
-                </tr>
-            </table>
-            <table class="movil">
-                <tr>
-                    <th>Nombre</th>
-                </tr>
-                <tr>
-                    <td lang="en">Magic Mushroom</td>
-                </tr>
-                <tr>
-                    <th>Conjunto</th>
-                </tr>
-                <tr>
-                    <td>Todas las salas</td>
-                </tr>
-                <tr>
-                    <th>Descripción</th>
-                </tr>
-                <tr>
-                    <td>Mejora varias pasivas</td>
-                </tr>
-                <tr>
-                    <th>Tipo</th>
-                </tr>
-                <tr>
-                    <td>Pasivo</td>
-                </tr>
-                <tr>
-                    <th>Coste</th>
-                </tr>
-                <tr>
-                    <td>Ninguno/bomba para romper setas</td>
-                </tr>
-                <tr>
-                    <th>Foto</th>
-                </tr>
-                <tr>
-                    <td><img src="assets/img/objects/mushroom.png" alt="Magic Mushroom pedestal"></td>
-                </tr>
-            </table>
-            <table class="movil">
-                <tr>
-                    <th>Nombre</th>
-                </tr>
-                <tr>
-                    <td lang="en">Epic Fetus</td>
-                </tr>
-                <tr>
-                    <th>Conjunto</th>
-                </tr>
-                <tr>
-                    <td>Habitaciones doradas</td>
-                </tr>
-                <tr>
-                    <th>Descripción</th>
-                </tr>
-                <tr>
-                    <td>Las lágrimas son reemplazadas por misiles guiados</td>
-                </tr>
-                <tr>
-                    <th>Tipo</th>
-                </tr>
-                <tr>
-                    <td>Pasivo</td>
-                </tr>
-                <tr>
-                    <th>Coste</th>
-                </tr>
-                <tr>
-                    <td>Ninguno</td>
-                </tr>
-                <tr>
-                    <th>Foto</th>
-                </tr>
-                <tr>
-                    <td><img src="assets/img/objects/Dr_Fetus.webp" alt="Epic fetus PNJ"></td>
-                </tr>
-            </table>
-        </section>
-        <section id="contacto">
-            <h2>¿Algún problema con la web?, rellena este formulario o ven a darte de piñas a la ubicación</h2>
-            <div id="contactopadre">
-                <div id="ubicacion">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d199.17510066360785!2d-3.5704576905670518!
-                    3d36.99066844758624!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd71ee08a2d8d8ed%3A0x74bab598357f1443
-                    !2sC.%20Estacion%2C%209%2C%2018650%20D%C3%BArcal%2C%20Granada!5e0!3m2!1ses!2ses!4v1653568673743!5m2!1ses!2ses"
-                     width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when
-                     -downgrade"></iframe>
-                </div>
-                <div id="formularioabajo">
-                    <form action="">
-                        <div id="nombreycorreo">
-                            <div id="nombreformulario">
-                                <label for="nombreformularioabajo">Nombre:</label>
-                                <input class="fallo" type="text" id="nombreformularioabajo" name="nombreformularioabajo">
-                            </div>
-                            <div id="correoformulario">
-                                <label for="correoformularioabajo">Correo:</label>
-                                <input class="fallo" type="email" id="correoformularioabajo" name="correoformularioabajo">
-                            </div>
-                        </div>
-                        <div id="textareaabajo">
-                            <p>¿Cuál es la sucedura?</p>
-                            <textarea name="sucedura" id="sucedura" cols="30" rows="10"></textarea>
-                        </div>
-                        <div id="aceptar">
-                            <input type="checkbox" id="aceptacionformularioabajo" name="aceptacionformularioabajo">
-                            <label for="aceptacionformularioabajo">Acepto que Tomas me de de ostias en la ubicación</label>
-                        </div>
-                        <div id="boton">
-                            <button type="submit">Contactar</button>
-                        </div>
-                    </form>
+                <div id="info_2" class="info" style="display: none;">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2900.4359998151995!2d-8.401283483829282!3d43.36790677884864!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd2e7c8704d642ed%3A0xb62d6482f537349c!2sPalexco!5e0!3m2!1ses!2ses!4v1670276972847!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    
+                    <h3><a href=https://twitter.com/hobbycongalicia>Enlace</a></h3>
                 </div>
             </div>
-        </section>
-    </main>   
-</body>
+            <div>
+                <div class="contenedor">
+                    <h2>JapanWeekend Madrid 11-12 Febrero</h2>
+                    <i class="fa-solid fa-angle-down enlace" id="enlace_3"></i>
+                    <i class="fa-solid fa-angle-up enlace" id="enlace_3.1" style="display: none;"></i>
+                </div>
+                <div id="info_3" class="info" style="display: none;">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3035.3528600310096!2d-3.616847848214666!3d40.4674580554344!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd422e50d152df37%3A0x801ce4be7e7a5eec!2sRecinto%20Ferial%20-%20Ifema%20Madrid!5e0!3m2!1ses!2ses!4v1670277640873!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    
+                    <h3><a href=https://www.japanweekend.com/madrid>Enlace</a></h3>
+                </div>
+            </div>
+            <div>
+                <div class="contenedor">
+                    <h2>ExpOtaku Logroño 17-19 Febrero</h2>
+                    <i class="fa-solid fa-angle-down enlace" id="enlace_4"></i>
+                    <i class="fa-solid fa-angle-up enlace" id="enlace_4.1" style="display: none;"></i>
+                </div>
+                <div id="info_4" class="info" style="display: none;">
+                    <img src="mem.jpeg" alt="">
+    
+                    <h3><a href=https://www.youtube.com/watch?v=dQw4w9WgXcQ>No Info</a></h3>
+                </div>
+            </div>
+            <div>
+                <div class="contenedor">
+                    <h2>ExpOtaku Almería 24-26 Marzo</h2>
+                    <i class="fa-solid fa-angle-down enlace" id="enlace_5"></i>
+                    <i class="fa-solid fa-angle-up enlace" id="enlace_5.1" style="display: none;"></i>
+                </div>
+                <div id="info_5" class="info" style="display: none;">
+                    <img src="mem.jpeg" alt="">
+    
+                    <h3><a href=https://www.youtube.com/watch?v=dQw4w9WgXcQ>No Info</a></h3>
+                </div>
+            </div>
+            <div>
+                <div class="contenedor">
+                    <h2>JapanWeekend Coruña 25-26 Marzo</h2>
+                    <i class="fa-solid fa-angle-down enlace" id="enlace_6"></i>
+                    <i class="fa-solid fa-angle-up enlace" id="enlace_6.1" style="display: none;"></i>
+                </div>
+                <div id="info_6" class="info" style="display: none;">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d5803.507379863321!2d-8.410125!3d43.340343!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x93831a251a29aaeb!2sExpoCoru%C3%B1a!5e0!3m2!1ses!2ses!4v1670278458368!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    
+                    <h3><a href=https://www.japanweekend.com/acoruna/>Enlace</a></h3>
+                </div>
+            </div>
+            <div>
+                <div class="contenedor">
+                    <h2>ExpOtaku Coruña Mayo</h2>
+                    <i class="fa-solid fa-angle-down enlace" id="enlace_7"></i>
+                    <i class="fa-solid fa-angle-up enlace" id="enlace_7.1" style="display: none;"></i>
+                </div>
+                <div id="info_7" class="info" style="display: none;">
+                    <img src="mem.jpeg" alt="">
+    
+                    <h3><a href=https://www.youtube.com/watch?v=dQw4w9WgXcQ>No info</a></h3>
+                </div>
+            </div>
+            <div>
+                <div class="contenedor">
+                    <h2>Metropoli Asturias Julio</h2>
+                    <i class="fa-solid fa-angle-down enlace" id="enlace_8"></i>
+                    <i class="fa-solid fa-angle-up enlace" id="enlace_8.1" style="display: none;"></i>
+                </div>
+                <div id="info_8" class="info" style="display: none;">
+                    <img src="mem.jpeg" alt="">
+    
+                    <h3><a href=https://www.youtube.com/watch?v=dQw4w9WgXcQ>No info</a></h3>
+                </div>
+            </div>
+            <div>
+                <div class="contenedor">
+                    <h2>CometCon Asturias Septiembre</h2>
+                    <i class="fa-solid fa-angle-down enlace" id="enlace_9"></i>
+                    <i class="fa-solid fa-angle-up enlace" id="enlace_9.1" style="display: none;"></i>
+                </div>
+                <div id="info_9" class="info" style="display: none;">
+                    <img src="mem.jpeg" alt="">
+    
+                    <h3><a href=https://www.youtube.com/watch?v=dQw4w9WgXcQ>No info</a></h3>
+                </div>
+            </div>
+            <h2>¡Comparte la web!</h2>
+        </main>
+    </body>
 </html>
+<script src="logica.js"></script>
