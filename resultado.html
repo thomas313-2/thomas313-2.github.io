@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Resultado</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f5f5f5;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+    h1 {
+        color: #ff69b4;
+        font-size: 48px;
+        text-align: center;
+    }
+</style>
+</head>
+<body>
+<h1 id="score"></h1>
+
+<script>
+    // Obtener el puntaje de la URL
+    const urlParams = new URLSearchParams(window.location.search);
+    const score = urlParams.get('score');
+
+    // Mostrar el puntaje en el HTML
+    document.getElementById('score').innerText = `¡Tu puntaje es: ${score}!`;
+</script>
+</body>
+</html>
